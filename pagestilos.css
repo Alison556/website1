@@ -1,0 +1,156 @@
+/*Definir la fuente y el color de fondo de la página*/
+body{
+	font-family: sans-serif;
+	background-color: white;
+}
+/*Definir el estilo del escabezado*/
+header{
+	background-color: white;
+	color: black;
+	padding: 30px;
+}
+
+header h1{
+	color: rgb(0, 0, 0);
+}
+
+/*Definir el estilo del menú de navegación*/
+nav{
+	background-color: #ffcccc;
+	padding: 10px;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+nav li{
+	margin: 0 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav a:hover{
+	color:black;
+	background-color: #ffcccc;
+}
+
+section{
+	width: 100%;
+	overflow: hidden;
+	background: White;
+}
+
+section #Info{
+	overflow: hidden;
+	width: 800px;
+	margin: 0px auto 5px auto;
+}
+
+section #info aside{
+	float: left;
+	width:220px;
+}
+
+section #info aside h2{
+	padding: 0px 0px 20px 0px;
+	color: black;
+	letter-spacing: -1;
+	font-size: 25px;
+}
+
+section #info aside ul li{
+	list-style: none;
+	padding: 15px 0px;
+	border-top: 1px dashed #210b81;
+}
+section #info aside ul li a{
+	text-decoration: none;
+	color: #1171ad;
+	font-size: 16px;
+}
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+/*Definir el estilo de los enlaces*/
+a{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+a:hover{
+text-decoration: underline;
+}
+
+/* Main */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.container-items2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.container-items3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
